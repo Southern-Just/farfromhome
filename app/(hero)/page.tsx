@@ -9,7 +9,7 @@ const Hero = () => {
           opacity: 0.7
          }}
       >
-        <div className="absolute container top-0 left-0 w-full p-6">
+        <div className="absolute top-0 left-0 w-full py-6 px-0">
           <Header/>
         </div>
         <div className="h-full flex flex-col justify-center items-start px-6 space-y-4 ml-6 text-foreground">
