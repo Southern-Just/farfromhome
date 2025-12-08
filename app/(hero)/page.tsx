@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+
 const Hero = () => {
   return (
     <main>
@@ -8,7 +10,7 @@ const Hero = () => {
          }}
       >
         <div className="absolute container top-0 left-0 w-full p-6">
-          <p>header</p>
+          <Header/>
         </div>
         <div className="h-full flex flex-col justify-center items-start px-6 space-y-4 ml-6 text-foreground">
           <h1 className="text-5xl font-bold">Toka kwenu, Tukatembee</h1>
