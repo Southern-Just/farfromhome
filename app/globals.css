@@ -3,19 +3,22 @@
 :root {
   --background: oklch(100% 0.00011 271.152);
   --foreground: oklch(20.463% 0.00002 271.152);
+  --brown: #ac7f5e;
   --color-btn-bg: oklch(94.029% 0.09724 140.13);
   --color-btn-fg: oklch(68.094% 0.13857 166.852);
   --font-geist-sans: 'Geist Sans', -apple-system, BlinkMachine, 'Segoe UI', Roboto, Oxygen;
-  --font-geist-mono: 'Geist Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --font-figtree: 'Figtree', sans-serif; /* Added Figtree variable */
 }
  
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brown: var(--brown);
+
   --color-btn-bg: var(--color-btn-bg);
   --color-btn-fg: var(--color-btn-fg);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-figtree); /* Default Tailwind sans is now Figtree */
+  /* --font-mono removed */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -28,14 +31,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  word-spacing: 2px;
+  font-family: var(--font-figtree); 
 }
 
 @layer base {
 
   button {
     @apply cursor-pointer rounded-md px-4 py-2 text-btn-fg bg-btn-bg font-normal ring-0 transition-all duration-200;
+  }
+  input{
+    @apply outline-0 w-full outline-1 w-full outline-gray-400 px-2  py-0.5 rounded-sm
   }
 }
 
@@ -49,7 +54,18 @@ body {
   .bg-background {
     background-color: var(--background);
   }
+  .success-bg{
+    background-image: url("/images/confetti.png");
+  }
   .text-background {
     color: var(--background);
+  }
+
+  /* stripe */
+  .stripe {
+    @apply flex justify-center items-center px-4 py-2 gap-12 space-y-6  w-full h-screen
+  }
+  .stripe h2{
+    @apply text-[12px]
   }
 }
