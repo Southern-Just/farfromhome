@@ -47,7 +47,7 @@ const MustVisit: FC = () => {
   const smalls = mustVisitData.filter((i) => i.size === "small") as MustVisitItem[];
 
   return (
-    <section className="w-[90%] md:w-[82%] mx-auto mt-12">
+    <section className="w-[90%] md:w-[82%] mx-auto mt-16 sm:mt-12">
       <h1 className="text-2xl md:text-3xl font-bold">Must-Visit Locales</h1>
       <p className="text-gray-600 mb-8 text-sm md:text-base">
         it has been said, you haven’t travelled yet if these places, well..

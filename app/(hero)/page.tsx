@@ -30,7 +30,6 @@ const Hero = () => {
   return (
     <main className="w-full overflow-x-hidden">
       <section className="relative h-screen overflow-hidden">
-
         <div
           className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
             stickyHeader
@@ -49,7 +48,7 @@ const Hero = () => {
             transition-all duration-700 ease-in-out
           "
           style={{
-            backgroundImage: "url('/icons/hero_img.svg')",
+            backgroundImage: "url('/images/giants.jpg')",
             backgroundSize: "cover",
             backgroundPosition: `center calc(50% + ${parallaxY}px)`,
             transform: `scale(${scale}) rotateX(${tilt}deg)`,
@@ -73,22 +72,22 @@ const Hero = () => {
           <div
             className="
               w-[90%] md:w-[82%] mx-auto px-6
-              flex flex-col justify-center
+              flex flex-col justify-center items-center sm:items-start
               space-y-4 text-foreground
               h-full
             "
           >
-            <h1 className="text-4xl sm:text-5xl font-bold whitespace-nowrap">
+            <h1 className="text-4xl sm:text-5xl font-bold whitespace-nowrap text-center sm:text-left">
               Toka kwenu, Tukatembee
             </h1>
 
-            <p className="text-sm sm:text-base max-w-md ml-2 opacity-90">
+            <p className="text-sm sm:text-base max-w-md opacity-90 text-center sm:text-left sm:ml-2">
               Personalize your trip in minutes—choose your destination, set your
               interests, and explore with ease.
             </p>
 
-            <button className="mt-12 px-8 py-2 ml-4 rounded-lg shadow-sm w-fit">
-              Twende
+            <button className="mt-12 px-8 py-2 rounded-lg shadow-sm w-fit sm:ml-4">
+              Twende : <span className="text-[10px] text-brown">{"{ perhaps start by creating your own }"}</span>
             </button>
           </div>
         </div>

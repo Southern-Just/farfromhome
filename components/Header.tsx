@@ -6,7 +6,7 @@ const Header = () => {
       <h1 className="text-brown font-bold text-xl sm:text-2xl">FarFromHome</h1>
 
       <div className="flex items-center gap-4 sm:gap-6">
-        <p className="hidden sm:block text-sm sm:text-base">Admin Panel</p>
+        <p className="hidden sm:block text-sm sm:text-base">{"{ Kenya }"}</p>
 
         <Image
           src="/icons/profile.svg"
@@ -21,7 +21,7 @@ const Header = () => {
           alt="logout"
           width={40}
           height={40}
-          className="cursor-pointer w-8 h-8 sm:w-10 sm:h-10"
+          className="cursor-pointer w-8 h-8 hidden sm:block sm:w-10 sm:h-10"
         />
       </div>
     </nav>

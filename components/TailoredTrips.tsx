@@ -13,7 +13,7 @@ const TailoredTrips = () => {
   const visibleTrips = destination.slice(start, start + ITEMS_PER_PAGE);
 
   return (
-    <section className="w-[90%] md:w-[82%] mx-auto py-10 sm:mt-12">
+    <section className="w-[90%] md:w-[82%] mx-auto py-10 mt-16 sm:mt-12">
       <h1 className="text-2xl md:text-3xl font-bold">Tailored Sceneries</h1>
       <p className="text-gray-600 mb-10 text-sm md:text-base">Browse well-planned trips designed for different travel styles and interests</p>
 
@@ -39,7 +39,7 @@ const TailoredTrips = () => {
         ))}
       </div>
 
-      <div className="flex justify-between items-center mx-auto mt-10 gap-4">
+      <div className="flex justify-center sm:justify-between items-center mx-auto mt-10 gap-4">
         <button onClick={() => page > 1 && setPage(page - 1)} disabled={page === 1} className="hidden md:flex px-4 py-2 bg-white text-gray-600 shadow rounded-lg disabled:opacity-40 gap-2">
           <Image src="/icons/back.svg" alt="next" width={14} height={14} />
           Previous
