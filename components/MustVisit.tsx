@@ -53,7 +53,7 @@ const MustVisit: FC = () => {
         it has been said, you haven’t travelled yet if these places, well..
       </p>
 
-      <div className="flex flex-col md:flex-row gap-6 md:gap-4 md:items-stretch">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-8 justify-between md:items-stretch">
         <div className="flex flex-col gap-4 w-full md:w-[72%] items-center md:items-stretch">
           <ImageCard
             item={large}

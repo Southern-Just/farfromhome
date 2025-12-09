@@ -13,7 +13,7 @@ const TailoredTrips = () => {
   const visibleTrips = destination.slice(start, start + ITEMS_PER_PAGE);
 
   return (
-    <section className="w-[90%] md:w-[82%] mx-auto py-10">
+    <section className="w-[90%] md:w-[82%] mx-auto py-10 sm:mt-12">
       <h1 className="text-2xl md:text-3xl font-bold">Tailored Sceneries</h1>
       <p className="text-gray-600 mb-10 text-sm md:text-base">Browse well-planned trips designed for different travel styles and interests</p>
 

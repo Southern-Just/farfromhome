@@ -43,7 +43,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* BACKGROUND LAYER */}
         <div
           className="
             absolute inset-0
@@ -60,7 +59,6 @@ const Hero = () => {
           }}
         />
 
-        {/* CONTENT LAYER */}
         <div className="relative h-full flex flex-col justify-between">
           <div
             className={`transition-opacity duration-500 ${
