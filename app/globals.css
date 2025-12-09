@@ -42,6 +42,11 @@ body {
   input{
     @apply outline-0 w-full outline-1 w-full outline-gray-400 px-2  py-0.5 rounded-sm
   }
+  li{
+    list-style: disc;
+    margin-left: 20px;
+    font-size: .7em
+  }
 }
 
 @layer utilities {

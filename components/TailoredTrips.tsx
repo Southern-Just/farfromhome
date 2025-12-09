@@ -64,6 +64,8 @@ const TailoredTrips = () => {
           <p>Privacy Policy</p>
         </div>
       </div>
+
+
     </section>
   );
 };
