@@ -8,10 +8,9 @@ import { useRouter } from "next/navigation";
 export default function Trips({ id }: { id: string }) {
   const router = useRouter();
   const tripId = Number(id);
-
   const trip = destination.find((item) => item.id === tripId);
-  if (!trip)
-    return <p className="text-center mt-10">Trip not found</p>;
+
+  if (!trip) return <p className="text-center mt-10">Trip not found</p>;
 
   return (
     <div>
@@ -27,7 +26,6 @@ export default function Trips({ id }: { id: string }) {
           </div>
         </div>
 
-        {/* IMAGES */}
         <div className="flex w-full mt-6 gap-6">
           <Image
             src={trip.image}
@@ -55,7 +53,6 @@ export default function Trips({ id }: { id: string }) {
           </div>
         </div>
 
-        {/* TAGS */}
         <div className="flex gap-4 mt-4">
           {trip.tags.map((tag) => (
             <span
@@ -67,7 +64,6 @@ export default function Trips({ id }: { id: string }) {
           ))}
         </div>
 
-        {/* PRICE + TITLE */}
         <div className="mt-4 space-y-2">
           <div className="flex justify-between font-bold">
             <h1>{trip.scenery}</h1>
@@ -78,17 +74,14 @@ export default function Trips({ id }: { id: string }) {
           </h1>
         </div>
 
-        {/* DESCRIPTION */}
         <p className="mt-2 text-xs text-black font-semibold">
-          Discover {trip.scenery} located in {trip.locale}. This 5-day
-          adventure blends landscapes, exploration, and memorable moments.
+          Discover {trip.scenery} located in {trip.locale}.
         </p>
 
         <p className="mt-2 text-md">
           Enjoy a curated trip offering natural beauty and immersive activities.
         </p>
 
-        {/* PLAN */}
         <div className="space-y-6 mt-2 ml-8">
           {Object.entries(trip.plan).map(([day, activities]) => (
             <div key={day}>
@@ -104,16 +97,14 @@ export default function Trips({ id }: { id: string }) {
           ))}
         </div>
 
-        {/* PAY BUTTON */}
         <button
-          className="mt-6 px-5 py-3 rounded-lg "
-          onClick={() => router.push("/stripe")}
+          className="mt-6 px-5 py-3 rounded-lg"
+          onClick={() => router.push(`/stripe?id=${trip.id}`)}
         >
           Pay and join trip <span className="font-bold">(${trip.price})</span>
         </button>
       </section>
 
-      {/* BACK BUTTON */}
       <button
         className="absolute top-20 left-48 px-5 py-3 gap-2 bg-white text-gray-500 shadow-md rounded-lg flex"
         onClick={() => router.back()}

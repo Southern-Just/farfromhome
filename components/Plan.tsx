@@ -1,12 +1,15 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import Popular from "./Popular";
 
 const Plan = () => {
-    const router = useRouter();
+  const router = useRouter();
+  const [selectedId, setSelectedId] = useState("");
+
   return (
-    <>
-      <section className=" plan w-full mt-12 p-4 rounded-2xl shadow-xl  shadow-gray-400">
+    <div className="page-animate">
+      <section className="plan w-full mt-12 p-4 rounded-2xl shadow-xl shadow-gray-400">
         <div className="flex flex-wrap items-center mx-auto justify-between gap-4">
           <div className="flex flex-col">
             <label>Day | Range</label>
@@ -15,10 +18,11 @@ const Plan = () => {
 
           <div className="flex flex-col">
             <label>Activity</label>
-            <select>
-              <option>Hiking</option>
-              <option>Swimming</option>
-              <option>Sightseeing</option>
+            <select onChange={(e) => setSelectedId(e.target.value)}>
+              <option value="">Select</option>
+              <option value="1">Hiking</option>
+              <option value="2">Swimming</option>
+              <option value="3">Sightseeing</option>
             </select>
           </div>
 
@@ -41,18 +45,21 @@ const Plan = () => {
               <option>Bus</option>
             </select>
           </div>
+
           <div className="flex flex-col">
             <label>Tickets</label>
             <input
               type="text"
-              placeholder="# of people ony your carry"
+              placeholder="# of people on your carry"
               className="text-xs"
             />
           </div>
+
           <div className="flex flex-col">
             <label>Pricing</label>
             <input type="number" placeholder="4500" />
           </div>
+
           <div className="flex flex-col">
             <label>Scenery</label>
             <p className="border rounded-lg text-center p-0.5 text-[11px] bg-blue-100 text-blue-300">
@@ -61,16 +68,19 @@ const Plan = () => {
           </div>
         </div>
       </section>
+
       <div className="w-full flex gap-4 justify-end mt-6">
-        <button className=" bg-transparent shadow-sm">
-         Ticket 
-        </button>
-        <button onClick={()=>{router.push("/stripe")}}>
+        <button className="bg-transparent shadow-sm">Ticket</button>
+        <button
+          disabled={!selectedId}
+          onClick={() => router.push(`/stripe?id=${selectedId}`)}
+        >
           Pay Your Trip
         </button>
       </div>
+
       <Popular />
-    </>
+    </div>
   );
 };
 

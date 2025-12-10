@@ -3,7 +3,7 @@ import Plan from "@/components/Plan";
 
 const plan = () => {
   return (
-    <div>
+    <div >
       <Header />
       <div style={{ backgroundImage: "url('/images/confeti.png')" }}>
         <div className="text-4xl font-bold flex flex-col justify-center space-y-4 mt-16">

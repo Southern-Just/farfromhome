@@ -15,7 +15,7 @@ export const destination = [
     }
   },
   {
-    id: 2,
+    id: 290,
     scenery: "Emerald Peak Valley",
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     price: 420,
@@ -163,17 +163,18 @@ export const destination = [
       day4: "Summit viewpoint hike + glacier views",
       day5: "Return to Kathmandu, depart"
     }
-  }
-];
+  },
 
-export const mustVisitData = [
+  // --- MustVisitData merged into same schema ---
   {
-    id: 1,
-    tag: "4.9",
-    city: "Nairobi",
+    id: 101,
+    scenery: "Nairobi",
     activity: "Skydiving",
+    rating: "4.9",
+    price: 780,
+    tags: ["Adventure"],
+    locale: "Nairobi Kenya",
     image: "https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0",
-    size: "large",
     plan: {
       day1: "Nairobi National Museum, Karura Forest walk, Dinner at Village Market",
       day2: "Nairobi National Park safari, Giraffe Centre visit, Sunset at Uhuru Park",
@@ -183,12 +184,14 @@ export const mustVisitData = [
     }
   },
   {
-    id: 2,
-    tag: "4.7",
-    city: "Mombasa",
+    id: 102,
+    scenery: "Mombasa",
     activity: "Natural Spas",
+    rating: "4.7",
+    price: 600,
+    tags: ["Relaxation"],
+    locale: "Mombasa Kenya",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    size: "medium",
     plan: {
       day1: "Nyali Beach walk, Swahili dishes, Visit Fort Jesus",
       day2: "Natural spa + mud bath, Herbal massage, Beach sunset",
@@ -198,12 +201,14 @@ export const mustVisitData = [
     }
   },
   {
-    id: 3,
-    tag: "4.8",
-    city: "Nakuru",
+    id: 103,
+    scenery: "Nakuru",
     activity: "Hiking",
+    rating: "4.8",
+    price: 500,
+    tags: ["Hiking"],
+    locale: "Nakuru Kenya",
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-    size: "medium",
     plan: {
       day1: "Explore Nakuru town, Lake Nakuru viewpoint, Dinner in town",
       day2: "Hike Menengai Crater, Explore crater floor, Afternoon rest",
@@ -213,12 +218,14 @@ export const mustVisitData = [
     }
   },
   {
-    id: 4,
-    tag: "4.6",
-    city: "Kisumu",
+    id: 104,
+    scenery: "Kisumu",
     activity: "Boat Tours",
+    rating: "4.6",
+    price: 800,
+    tags: ["Boat", "Tours"],
+    locale: "Kisumu Kenya",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    size: "small",
     plan: {
       day1: "Kisumu Museum, Oginga Odinga Street walk, Fish dinner",
       day2: "Boat ride on Lake Victoria, Hippo Point, Sunset cruise",
@@ -228,12 +235,14 @@ export const mustVisitData = [
     }
   },
   {
-    id: 5,
-    tag: "4.5",
-    city: "Eldoret",
+    id: 105,
+    scenery: "Eldoret",
     activity: "Trail Running",
+    rating: "4.5",
+    price: 450,
+    tags: ["Running"],
+    locale: "Eldoret Kenya",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    size: "small",
     plan: {
       day1: "Acclimatization jog, Hydration, Dinner with Rift Valley views",
       day2: "Trail Run in Iten, Iten Viewpoint, Recovery session",
@@ -243,12 +252,14 @@ export const mustVisitData = [
     }
   },
   {
-    id: 6,
-    tag: "4.9",
-    city: "Lamu",
+    id: 106,
+    scenery: "Lamu",
     activity: "Cultural Tours",
+    rating: "4.9",
+    price: 330,
+    tags: ["Culture"],
+    locale: "Lamu Kenya",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    size: "small",
     plan: {
       day1: "Lamu Old Town walk, Swahili foods, Market exploration",
       day2: "Lamu Museum, Donkey Sanctuary, Dhow sail",
