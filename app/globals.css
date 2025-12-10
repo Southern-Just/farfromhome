@@ -40,12 +40,22 @@ body {
     @apply cursor-pointer rounded-md px-4 py-2 text-btn-fg bg-btn-bg font-normal ring-0 transition-all duration-200;
   }
   input{
-    @apply outline-0 w-full outline-1 w-full outline-gray-400 px-2  py-0.5 rounded-sm
+    @apply outline-1 w-full outline-gray-400 px-2  py-0.5 rounded-sm
   }
   li{
     list-style: disc;
     margin-left: 20px;
     font-size: .7em
+  }
+
+ .plan label{
+    @apply text-xl font-semibold mb-1 indent-[5%] text-start
+  }
+  .plan select{
+    @apply border border-gray-300 text-center text-gray-500 rounded-lg px-3 py-2
+  }
+  .plan input{
+    @apply border outline-0 border-gray-300  text-center  text-gray-500 rounded-lg px-3 py-2
   }
 }
 
@@ -73,4 +83,5 @@ body {
   .stripe h2{
     @apply text-[12px]
   }
+
 }

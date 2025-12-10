@@ -4,11 +4,14 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import MustVisit from "@/components/MustVisit";
 import TailoredTrips from "@/components/TailoredTrips";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
   const [stickyHeader, setStickyHeader] = useState(false);
 
+  const router = useRouter();
+  
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY || 0;
@@ -86,7 +89,7 @@ const Hero = () => {
               interests, and explore with ease.
             </p>
 
-            <button className="mt-12 px-8 py-2 rounded-lg shadow-sm w-fit sm:ml-4">
+            <button className="mt-12 px-8 py-2 rounded-lg shadow-sm w-fit sm:ml-4" onClick={()=>{router.push("/plan")}}>
               Twende : <span className="text-[10px] text-brown">{"{ perhaps start by creating your own }"}</span>
             </button>
           </div>
