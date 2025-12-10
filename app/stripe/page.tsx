@@ -1,3 +1,5 @@
+"use client";
+
 import Stripe from "@/components/Stripe";
 
 export default function StripePage() {
