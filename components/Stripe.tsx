@@ -42,7 +42,7 @@ export default function Stripe() {
 
   return (
     <div>
-      <div className="w-full flex flex-col items-center sm:mt-12 md:flex-row md:items-start md:justify-center gap-10 py-4 page-animate">
+      <div className="w-full flex flex-col items-center sm:mt-12 md:flex-row md:items-start md:justify-center gap-4 py-4 page-animate">
         <section className="space-y-8 px-2 py-4 w-full max-w-md">
           <div
             className="flex gap-2 cursor-pointer"
@@ -94,7 +94,7 @@ export default function Stripe() {
           </button>
 
           <p className="text-center text-gray-400 text-sm">
-            ---------------- Or pay with card ----------------
+            ------------------------- Or pay with card --------------------------
           </p>
 
           <div className="space-y-4">
