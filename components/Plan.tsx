@@ -9,12 +9,12 @@ const Plan = () => {
 
   return (
     <div className="page-animate">
-      <section className="plan w-full mt-12 p-4 rounded-2xl shadow-xl shadow-gray-400">
-        <div className="flex flex-wrap items-center mx-auto justify-between gap-4">
+      <section className="plan mx-auto p-4 border-t-2 border-t-gray-100 rounded-2xl shadow-xl shadow-gray-400">
+        <div className="flex items-center mx-auto justify-between gap-4">
           <div className="flex flex-col">
             <label>Day | Range</label>
             <input type="date" />
-          </div>
+          </div> 
 
           <div className="flex flex-col">
             <label>Activity</label>
@@ -27,7 +27,7 @@ const Plan = () => {
           </div>
 
           <div className="flex flex-col">
-            <label>Locale</label>
+            <label>Locale ( to visit )</label>
             <select>
               <option>Kenya</option>
               <option>United States</option>
@@ -55,12 +55,12 @@ const Plan = () => {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <label>Pricing</label>
-            <input type="number" placeholder="4500" />
+            <input type="number" placeholder="4500" className=" md:w-24" />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex-col hidden">
             <label>Scenery</label>
             <p className="border rounded-lg text-center p-0.5 text-[11px] bg-blue-100 text-blue-300">
               Tags
@@ -75,7 +75,7 @@ const Plan = () => {
           disabled={!selectedId}
           onClick={() => router.push(`/stripe?id=${selectedId}`)}
         >
-          Pay Your Trip
+          Pay Your Plan
         </button>
       </div>
 
