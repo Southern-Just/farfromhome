@@ -63,9 +63,7 @@ const Hero = () => {
           }}
         />
 
-        {/* Foreground Content */}
         <div className="relative min-h-[80vh] sm:h-full flex flex-col justify-between">
-          {/* Normal Header (only before scroll) */}
           <div
             className={`transition-opacity duration-500 ${
               stickyHeader ? "opacity-0" : "opacity-100"

@@ -15,7 +15,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "FarFromHome",
+  title: "SFarFromHome",
   description: "Travel platform for adventurous souls",
 };
 

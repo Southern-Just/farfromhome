@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <nav className="w-full flex justify-between items-center px-6 md:px-12 py-3 shadow-xs relative">
       <Link href="/">
-        <h1 className="text-brown font-bold text-xl sm:text-2xl">FarFromHome</h1>
+        <h1 className="text-brown font-bold text-xl sm:text-2xl">S.FarFromHome</h1>
       </Link>
       <div className="flex items-center gap-4 sm:gap-6 relative">
         <p className="hidden sm:block text-sm sm:text-base">{"{ Kenya }"}</p>
