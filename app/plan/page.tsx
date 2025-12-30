@@ -10,7 +10,7 @@ const PlanPage = () => {
         style={{ backgroundImage: "url('/images/confeti.png')" }}
         className="min-h-screen bg-cover bg-center bg-no-repeat items-center space-y-6 md:space-y-14 mt-6 px-4"
       >
-        <div className="text-2xl md:text-4xl font-bold flex flex-col justify-center space-y-4 text-center">
+        <div className="text-3xl md:text-4xl font-bold flex flex-col justify-center space-y-4 text-center">
           <h1 className="typewriter mx-auto">
             Create Your Travel Plan
           </h1>
